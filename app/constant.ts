@@ -207,6 +207,7 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 const deepseekModels = ["deepseek-chat"];
 const openaiModels = [
+  /*
   "gpt-3.5-turbo",
   "gpt-3.5-turbo-1106",
   "gpt-3.5-turbo-0125",
@@ -223,16 +224,20 @@ const openaiModels = [
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
   "gpt-4-1106-preview",
+  */
 ];
 
 const googleModels = [
+  /*
   "gemini-1.0-pro",
   "gemini-1.5-pro-latest",
   "gemini-1.5-flash-latest",
   "gemini-pro-vision",
+  */
 ];
 
 const anthropicModels = [
+  /*
   "claude-instant-1.2",
   "claude-2.0",
   "claude-2.1",
@@ -240,9 +245,11 @@ const anthropicModels = [
   "claude-3-opus-20240229",
   "claude-3-haiku-20240307",
   "claude-3-5-sonnet-20240620",
+  */
 ];
 
 const baiduModels = [
+  /*
   "ernie-4.0-turbo-8k",
   "ernie-4.0-8k",
   "ernie-4.0-8k-preview",
@@ -254,18 +261,22 @@ const baiduModels = [
   "ernie-speed-8k",
   "ernie-lite-8k",
   "ernie-tiny-8k",
+  */
 ];
 
 const bytedanceModels = [
+  /*
   "Doubao-lite-4k",
   "Doubao-lite-32k",
   "Doubao-lite-128k",
   "Doubao-pro-4k",
   "Doubao-pro-32k",
   "Doubao-pro-128k",
+  */
 ];
 
 const alibabaModes = [
+  /*
   "qwen-turbo",
   "qwen-plus",
   "qwen-max",
@@ -273,6 +284,7 @@ const alibabaModes = [
   "qwen-max-0403",
   "qwen-max-0107",
   "qwen-max-longcontext",
+  */
 ];
 
 export const DEFAULT_MODELS = [
@@ -285,6 +297,7 @@ export const DEFAULT_MODELS = [
       providerType: "",
     },
   })),
+  /*
   ...openaiModels.map((name) => ({
     name,
     available: true,
@@ -348,6 +361,7 @@ export const DEFAULT_MODELS = [
       providerType: "alibaba",
     },
   })),
+  */
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;

@@ -1374,9 +1374,7 @@ export function Settings() {
           </ListItem>
         </List>
         <div>
-          1st div
           <div style={{ display: "none" }}>
-            I am in
             <List>
               <ModelConfigList
                 modelConfig={config.modelConfig}
@@ -1389,6 +1387,7 @@ export function Settings() {
             </List>
           </div>
         </div>
+
         {shouldShowPromptModal && (
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
         )}
