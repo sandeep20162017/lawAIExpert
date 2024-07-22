@@ -682,22 +682,20 @@ export function Settings() {
 
   const useCustomConfigComponent = // Conditionally render the following ListItem based on clientConfig.isApp
     !clientConfig?.isApp && ( // only show if isApp is false
-      <div style={{ display: "none" }}>
-        <ListItem
-          title={Locale.Settings.Access.CustomEndpoint.Title}
-          subTitle={Locale.Settings.Access.CustomEndpoint.SubTitle}
-        >
-          <input
-            type="checkbox"
-            checked={accessStore.useCustomConfig}
-            onChange={(e) =>
-              accessStore.update(
-                (access) => (access.useCustomConfig = e.currentTarget.checked),
-              )
-            }
-          ></input>
-        </ListItem>
-      </div>
+      <ListItem
+        title={Locale.Settings.Access.CustomEndpoint.Title}
+        subTitle={Locale.Settings.Access.CustomEndpoint.SubTitle}
+      >
+        <input
+          type="checkbox"
+          checked={accessStore.useCustomConfig}
+          onChange={(e) =>
+            accessStore.update(
+              (access) => (access.useCustomConfig = e.currentTarget.checked),
+            )
+          }
+        ></input>
+      </ListItem>
     );
 
   const openAIConfigComponent = accessStore.provider ===
