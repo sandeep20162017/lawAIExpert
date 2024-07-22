@@ -1363,9 +1363,9 @@ export function Settings() {
               type="text"
               value={"deepseek-chat"} //ssk
               placeholder="model1,model2,model3"
-              onChange={(e) =>
+              onLoad={(e) =>
                 config.update(
-                  (config) => (config.customModels = e.currentTarget.value),
+                  (config) => (config.customModels = "deepseek-chat"),
                 )
               }
             ></input>
