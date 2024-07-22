@@ -137,6 +137,8 @@ function UserPromptModal(props: { onClose?: () => void }) {
 
   const [editingPromptId, setEditingPromptId] = useState<string>();
 
+  /////////
+
   useEffect(() => {
     if (searchInput.length > 0) {
       const searchResult = SearchService.search(searchInput);
