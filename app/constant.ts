@@ -1,5 +1,5 @@
-export const OWNER = "Yidadaa";
-export const REPO = "ChatGPT-Next-Web";
+export const OWNER = "Sandeep20162017"; // "Yidadaa";
+export const REPO = "lawaibuddy";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
@@ -82,12 +82,14 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
+  /*
   Azure = "Azure",
   Google = "Google",
   Anthropic = "Anthropic",
   Baidu = "Baidu",
   ByteDance = "ByteDance",
   Alibaba = "Alibaba",
+  */
 }
 
 // Google API safety settings, see https://ai.google.dev/gemini-api/docs/safety-settings
@@ -101,11 +103,13 @@ export enum GoogleSafetySettingsThreshold {
 
 export enum ModelProvider {
   GPT = "GPT",
+  /*
   GeminiPro = "GeminiPro",
   Claude = "Claude",
   Ernie = "Ernie",
   Doubao = "Doubao",
   Qwen = "Qwen",
+  */
 }
 
 export const Anthropic = {

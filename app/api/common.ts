@@ -33,7 +33,7 @@ export async function requestOpenai(req: NextRequest) {
   }
 
   let path = `${req.nextUrl.pathname}${req.nextUrl.search}`.replaceAll(
-    "/api/openai/",
+    "https://api.deepseek.com/", //ssk
     "",
   );
 
