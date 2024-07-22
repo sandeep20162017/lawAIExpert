@@ -36,7 +36,7 @@ export enum Path {
 export enum ApiPath {
   Cors = "",
   Azure = "/api/azure",
-  OpenAI = "/api/openai",
+  OpenAI = "htpps://api.deepseek.com", //ssk
   Anthropic = "/api/anthropic",
   Google = "/api/google",
   Baidu = "/api/baidu",
