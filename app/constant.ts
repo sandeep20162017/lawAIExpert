@@ -205,8 +205,8 @@ export const KnowledgeCutOffDate: Record<string, string> = {
   "gemini-pro-vision": "2023-12",
 };
 
+const deepseekModels = ["deepseek-chat"];
 const openaiModels = [
-  "deepseek-chat",
   "gpt-3.5-turbo",
   "gpt-3.5-turbo-1106",
   "gpt-3.5-turbo-0125",
@@ -276,6 +276,15 @@ const alibabaModes = [
 ];
 
 export const DEFAULT_MODELS = [
+  ...deepseekModels.map((name) => ({
+    name,
+    available: true,
+    provider: {
+      id: "deepseek",
+      providerName: "deepeek",
+      providerType: "deepseek",
+    },
+  })),
   ...openaiModels.map((name) => ({
     name,
     available: true,
