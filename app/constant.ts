@@ -281,8 +281,8 @@ export const DEFAULT_MODELS = [
     available: true,
     provider: {
       id: "deepseek",
-      providerName: "deepeek",
-      providerType: "deepseek",
+      providerName: "",
+      providerType: "",
     },
   })),
   ...openaiModels.map((name) => ({
