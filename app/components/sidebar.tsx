@@ -170,6 +170,8 @@ export function SideBar(props: { className?: string }) {
           icon={<MaskIcon />}
           text={shouldNarrow ? undefined : Locale.Mask.Name}
           className={styles["sidebar-bar-button"]}
+          onClick={() => showToast(Locale.WIP)}
+          /*
           onClick={() => {
             if (config.dontShowMaskSplashScreen !== true) {
               navigate(Path.NewChat, { state: { fromHome: true } });
@@ -177,6 +179,7 @@ export function SideBar(props: { className?: string }) {
               navigate(Path.Masks, { state: { fromHome: true } });
             }
           }}
+            */
           shadow
         />
         <IconButton
