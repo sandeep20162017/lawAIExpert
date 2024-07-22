@@ -1373,18 +1373,18 @@ export function Settings() {
             ></input>
           </ListItem>
         </List>
-
-        <List>
-          <ModelConfigList
-            modelConfig={config.modelConfig}
-            updateConfig={(updater) => {
-              const modelConfig = { ...config.modelConfig };
-              updater(modelConfig);
-              config.update((config) => (config.modelConfig = modelConfig));
-            }}
-          />
-        </List>
-
+        <div style={{ display: "none" }}>
+          <List>
+            <ModelConfigList
+              modelConfig={config.modelConfig}
+              updateConfig={(updater) => {
+                const modelConfig = { ...config.modelConfig };
+                updater(modelConfig);
+                config.update((config) => (config.modelConfig = modelConfig));
+              }}
+            />
+          </List>
+        </div>
         {shouldShowPromptModal && (
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
         )}
