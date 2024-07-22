@@ -1373,17 +1373,21 @@ export function Settings() {
             ></input>
           </ListItem>
         </List>
-        <div style={{ display: "none" }}>
-          <List>
-            <ModelConfigList
-              modelConfig={config.modelConfig}
-              updateConfig={(updater) => {
-                const modelConfig = { ...config.modelConfig };
-                updater(modelConfig);
-                config.update((config) => (config.modelConfig = modelConfig));
-              }}
-            />
-          </List>
+        <div>
+          1st div
+          <div style={{ display: "none" }}>
+            I am in
+            <List>
+              <ModelConfigList
+                modelConfig={config.modelConfig}
+                updateConfig={(updater) => {
+                  const modelConfig = { ...config.modelConfig };
+                  updater(modelConfig);
+                  config.update((config) => (config.modelConfig = modelConfig));
+                }}
+              />
+            </List>
+          </div>
         </div>
         {shouldShowPromptModal && (
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
