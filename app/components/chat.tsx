@@ -551,13 +551,14 @@ export function ChatActions(props: {
           </>
         }
       />
-
+      {/* ssk hide prompts in chat
       <ChatAction
         onClick={props.showPromptHints}
         text={Locale.Chat.InputActions.Prompt}
         icon={<PromptIcon />}
       />
-
+    */}
+      {/* ssk hide masks in chat
       <ChatAction
         onClick={() => {
           navigate(Path.Masks);
@@ -565,7 +566,7 @@ export function ChatActions(props: {
         text={Locale.Chat.InputActions.Masks}
         icon={<MaskIcon />}
       />
-
+    */}
       <ChatAction
         text={Locale.Chat.InputActions.Clear}
         icon={<BreakIcon />}
@@ -580,13 +581,13 @@ export function ChatActions(props: {
           });
         }}
       />
-
+      {/*
       <ChatAction
         onClick={() => setShowModelSelector(true)}
         text={currentModelName}
         icon={<RobotIcon />}
       />
-
+    */}
       {showModelSelector && (
         <Selector
           defaultSelectedValue={`${currentModel}@${currentProviderName}`}
