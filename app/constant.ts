@@ -103,13 +103,12 @@ export enum GoogleSafetySettingsThreshold {
 
 export enum ModelProvider {
   GPT = "GPT",
-  /*
+
   GeminiPro = "GeminiPro",
   Claude = "Claude",
   Ernie = "Ernie",
   Doubao = "Doubao",
   Qwen = "Qwen",
-  */
 }
 
 export const Anthropic = {
