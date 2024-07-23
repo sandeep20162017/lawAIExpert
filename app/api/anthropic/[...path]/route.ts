@@ -149,7 +149,7 @@ async function request(req: NextRequest) {
         isModelAvailableInServer(
           serverConfig.customModels,
           jsonBody?.model as string,
-          ServiceProvider.Anthropic as string,
+          ServiceProvider.OpenAI as string,
         )
       ) {
         return NextResponse.json(
