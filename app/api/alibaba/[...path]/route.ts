@@ -118,7 +118,7 @@ async function request(req: NextRequest) {
         isModelAvailableInServer(
           serverConfig.customModels,
           jsonBody?.model as string,
-          ServiceProvider.Alibaba as string,
+          ServiceProvider.OpenAI as string,
         )
       ) {
         return NextResponse.json(
