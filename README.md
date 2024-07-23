@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 <a href='#企业版'>
@@ -463,3 +464,7 @@ If you want to add a new translation, read this [document](./docs/translation.md
 ## LICENSE
 
 [MIT](https://opensource.org/license/mit/)
+=======
+# LawAIExpert
+AI Law expert. LLM model fine tuned for law. Contact Sandeep.Kanao@gmail.com
+>>>>>>> 085b0d228efaeeb4e9cdb9e3cc7db4f6801cbb06
