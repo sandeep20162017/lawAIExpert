@@ -462,7 +462,8 @@ export const useChatStore = createPersistStore(
         if (shouldInjectSystemPrompts) {
           console.log(
             "[Global System Prompt] ",
-            systemPrompts.at(0)?.content ?? "empty",
+            systemPrompts.at(0)?.content ??
+              "You are indian lawyer. anwer only law questions related to indian law, for others say I don't know",
           );
         }
         const memoryPrompt = get().getMemoryPrompt();
