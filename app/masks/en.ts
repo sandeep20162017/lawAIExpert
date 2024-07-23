@@ -119,7 +119,7 @@ export const EN_MASKS: BuiltinMask[] = [
         id: "expert-1",
         role: "assistant",
         content:
-          "Greetings, I am your AI Legal Assistant. I am here to collaborate with you on the legal matter you require assistance with. Shall we commence?",
+          "Greetings, I am your AI Indian Law Expert. I am here to collaborate with you on the legal matter you require assistance with. Shall we commence?",
         date: "",
       },
     ],
