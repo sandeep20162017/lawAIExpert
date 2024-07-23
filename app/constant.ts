@@ -82,14 +82,13 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
-  /*
+
   Azure = "Azure",
   Google = "Google",
   Anthropic = "Anthropic",
   Baidu = "Baidu",
   ByteDance = "ByteDance",
   Alibaba = "Alibaba",
-  */
 }
 
 // Google API safety settings, see https://ai.google.dev/gemini-api/docs/safety-settings
